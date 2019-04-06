@@ -1,13 +1,3 @@
-/*
- ============================================================================
- Name        : ej1.c
- Author      : 
- Version     :
- Copyright   : Your copyright notice
- Description : Hello World in C, Ansi-style
- ============================================================================
- */
-
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -16,8 +6,8 @@ char* str_concat(char*, const char*);
 
 int main(){
 
-	char* nombre = "Franco";
-	char* hola = malloc(15);
+	char* nombre = "Nombre";
+	char* hola = malloc(15); //con 15 bytes alcanza y sobra
 	strcpy(hola,"Hola ");
 	char* saludo;
 
@@ -25,7 +15,7 @@ int main(){
 
 	printf("%s", saludo);
 
-	free(hola);
+	free(hola);  //siempre hay que liberar la memoria que pedi
 	return 0;
 }
 
